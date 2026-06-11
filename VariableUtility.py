@@ -1,3 +1,5 @@
+#This file was committed by Mason Lanham
+
 #Purpose is to handle the string variables and provide general utilities to the program
 import os.path #module handles file paths in the os
 class VariableUtility():

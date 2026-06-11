@@ -1,0 +1,7 @@
+Interpreter - This class is responsible for interpreting the commands entered by the user, and making the calls to other parts of the program associated with those commands.
+Help - This class is responsible for displaying the help information when the user enters the help menu.
+VariableUtility - This class is responsible for storing and validating the file paths and file names entered by the user.
+Parser - This class is responsible for extracting TextualElements, GraphicalElements, and Tables from the Word document into the internal document structure "WordDocList," which is an array of those types of objects.
+ProcedureParser - This class is responsible for ensuring that the internal document structure is in the same order as in the Word document, generating the tokens used to identify procedures, identifying strings that begin with those tokens as procedure strings, as well as identifying and extracting procedures.
+Procedure, Table, Cell, Column, Row, TextualElement, Run, GraphicalElement - This class is part of the class hierarchy that describes the internal structure of the word document. It's capable of returning the XML code that represents it as a string.
+WordDataExtractor.py - Run this script to start the program.
