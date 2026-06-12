@@ -22,7 +22,6 @@ class ProcedureParser():
         
     def generateTokens0(self, prePattern, postPattern, numberingType): #Method generates the tokens that are used to identify procedures
         lowercase = "abcdefghijklmnopqrstuvwxyz"
-        romanNumeral = ["i", "ii", "iii", "iv", "v" , "vi", "vii", "viii", "ix", "x", "xi", "xii", "xiii", "xiv", "xv", "xvi", "xvii", "xviii", "xix", "xx", "xxi", "xxii", "xxiii", "xxiv", "xxv"]
         if(numberingType == 0):
             for x in range(1, 25):
                 self.Tokens0.append(prePattern + str(x) + postPattern)
@@ -32,19 +31,12 @@ class ProcedureParser():
         elif(numberingType == 2):
             for x in range(0, 25):
                 self.Tokens0.append(prePattern + str(lowercase[x].upper()) + postPattern)
-        elif(numberingType == 3):
-            for x in range(0, 25):
-                self.Tokens0.append(prePattern + str(romanNumeral[x]) + postPattern)
-        elif(numberingType == 4):
-            for x in range(0, 25):
-                self.Tokens0.append(prePattern + str(romanNumeral[x].upper()) + postPattern)
         else:
             for x in range(1, 25):
                 self.Tokens0.append(prePattern + str(x) + postPattern)
                 
     def generateTokens1(self, prePattern, postPattern, numberingType): #Method generates the tokens that are used to identify sub-procedures
         lowercase = "abcdefghijklmnopqrstuvwxyz"
-        romanNumeral = ["i", "ii", "iii", "iv", "v" , "vi", "vii", "viii", "ix", "x", "xi", "xii", "xiii", "xiv", "xv", "xvi", "xvii", "xviii", "xix", "xx", "xxi", "xxii", "xxiii", "xxiv", "xxv"]
         if(numberingType == 0):
             for x in range(1, 25):
                 self.Tokens1.append(prePattern + str(x) + postPattern)
@@ -54,12 +46,6 @@ class ProcedureParser():
         elif(numberingType == 2):
             for x in range(0, 25):
                 self.Tokens1.append(prePattern + str(lowercase[x].upper()) + postPattern)
-        elif(numberingType == 3):
-            for x in range(0, 25):
-                self.Tokens1.append(prePattern + str(romanNumeral[x]) + postPattern)
-        elif(numberingType == 4):
-            for x in range(0, 25):
-                self.Tokens1.append(prePattern + str(romanNumeral[x].upper()) + postPattern)
         else:
             for x in range(1, 25):
                 self.Tokens0.append(prePattern + str(x) + postPattern)

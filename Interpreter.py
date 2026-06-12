@@ -102,12 +102,12 @@ class Interpreter():
                     self.ProcedureParser = ProcedureParser()
                     x = input("Any Procedures?")
                     if x == "y" or x == "Y" or x == "Yes" or x == "yes":
-                        x = input("What type? 1 = Numeric, 2 = Lowercase, 3 = Uppercase, 4 = Lowercase Roman Numerals, 5 = Uppercase Roman Numerals")
+                        x = input("What type? 1 = Numeric, 2 = Lowercase, 3 = Uppercase")
                         if x.isdigit():
                             self.ProcedureParser.generateTokens0(self.prePattern, self.postPattern, int(x) - 1)
                         x = input("Any Subprocedures?")
                         if x == "y" or x == "Y" or x == "Yes" or x == "yes": 
-                            x = input("What type? 1 = Numeric, 2 = Lowercase, 3 = Uppercase, 4 = Lowercase Roman Numerals, 5 = Uppercase Roman Numerals")
+                            x = input("What type? 1 = Numeric, 2 = Lowercase, 3 = Uppercase")
                             if x.isdigit():
                                 self.ProcedureParser.generateTokens1(self.subPrePattern, self.subPostPattern, int(x) - 1)
                     if x.isdigit():
